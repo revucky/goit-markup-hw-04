@@ -14,9 +14,11 @@
   --text-white: #fff;
   --color-bcg: #2f303a;
   --mail-tel-footer: rgba(255, 255, 255, 0.6);
+  --social-footer: rgba(255, 255, 255, 0.1);
   --button-filter: #f5f4fa;
   --button-filter-text: #212121;
   --header-border: #ececec;
+  --bgc-hero: rgba(47, 48, 58, 0.4);
   --card-set-gap: 30px;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -183,7 +185,11 @@ img {
 .section-hero {
   text-align: center;
   padding: 200px 0;
-  background-color: var(--color-bcg);
+  max-width: 1600px;
+  background-color: var(--bgc-hero);
+  background-image: url(../images/bgimg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .title-studio {
@@ -220,8 +226,7 @@ img {
 /* footer */
 .footer {
   background-color: var(--color-bcg);
-  padding: 60px;
-  /* font-size: 14px;
+
   line-height: 1.71; */
 }
 .footer .text-logo-footer {
@@ -282,6 +287,17 @@ img {
 
   color: var(--text-white);
 }
+/* .footer-item::after {
+  width: 44px;
+  height: 44px;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--social-footer);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/facebook.svg);
+} */
 /* особенности */
 
 .credo {
