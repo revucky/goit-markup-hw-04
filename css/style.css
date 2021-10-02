@@ -16,6 +16,7 @@
   --mail-tel-footer: rgba(255, 255, 255, 0.6);
   --social-footer: rgba(255, 255, 255, 0.1);
   --button-filter: #f5f4fa;
+  --bg-icon-credo: #f5f4fa;
   --button-filter-text: #212121;
   --header-border: #ececec;
   --bgc-hero: rgba(47, 48, 58, 0.4);
@@ -162,6 +163,7 @@ img {
 .contact .item {
   display: flex;
   margin-right: 50px;
+  align-items: center;
 }
 .item:last-child {
   margin-right: 0;
@@ -169,18 +171,33 @@ img {
 
 .contact .link {
   color: var(--primery-text-color);
+  fill: var(--primery-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding: 32px 0;
+  align-items: center;
+display: flex;
 }
-.contact a:focus,
-.contact a:hover {
+.contact .link:focus,
+.contact .link:hover {
   color: var(--text-accent-hf);
+  fill: var(--text-accent-hf);
 }
 
+.icon.tel {
+  width:10px; 
+  height:16px;
+  margin-right: 10px;
+
+}
+.icon.mail {
+  width:16px;
+  height:12px;
+  margin-right: 10px;
+}
 /* hero */
 .section-hero {
   text-align: center;
@@ -276,7 +293,7 @@ img {
 }
 .footer-list {
   margin-left: 70px;
-  outline: 1px solid purple;
+  /* outline: 1px solid purple; */
 }
 .footer-title {
   font-weight: 700;
@@ -287,27 +304,54 @@ img {
 
   color: var(--text-white);
 }
-/* .footer-item::after {
+.footer-item{
+  display: block;
+  width: 206px;
+  margin-bottom: 20px;
+}
+.footer-flex {
+  display: flex;
+}
+.link-social {
   width: 44px;
   height: 44px;
-  content: "";
-  display: inline-block;
   border-radius: 50%;
-  background-color: var(--social-footer);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/facebook.svg);
-} */
+ display: flex;
+  align-items: center;
+background-color: rgba(255, 255, 255, 0.1);
+margin-right: 10px;
+}
+.link-social:hover{
+  background-color: var(--text-accent-hf);
+}
+.footer-social {
+  fill: var(--text-white);
+  margin: 12px;
+}
 /* особенности */
 
 .credo {
   display: flex;
 }
-.credo-item {
+.credo-item::not(last-child) {
   margin-right: 30px;
 }
 .features {
   padding-bottom: 0;
+}
+.wrap-credo-icon{
+background: var(--bg-icon-credo);
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+}
+
+.credo-icon {
+  height: 70px;
+border-radius: 4px;
+width: 100%;
+padding-top: 20px;
+
 }
 .section-title-feature {
   color: var(--text-title);

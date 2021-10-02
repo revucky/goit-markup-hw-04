@@ -31,10 +31,14 @@
         </nav>
         <ul class="contact">
           <li class="item">
-            <a class="link" href="mailto:">info@devstudio.com</a>
+            <a class="link" href="mailto:"><svg class="icon mail">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg> info@devstudio.com</a>
           </li>
           <li class="item">
-            <a class="link" href="tel:">+38 096 111 11 11</a>
+            <a class="link" href="tel:"><svg class="icon tel">
+                <use href="./images/sprite.svg#icon-tel" ></use>
+              </svg> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -51,6 +55,12 @@
           <h2 class="visually-hidden">Наше кредо</h2>
           <ul class="credo">
             <li class="credo-item">
+              <div class="wrap-credo-icon">
+                <svg class="credo-icon">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+
               <h3 class="section-title-feature">Внимание к деталям</h3>
               <p class="text-feature">
                 Идейные соображения, а также начало повседневной работы по
@@ -58,6 +68,12 @@
               </p>
             </li>
             <li class="credo-item">
+              <div class="wrap-credo-icon">
+                <svg class="credo-icon">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+
               <h3 class="section-title-feature">Пунктуальность</h3>
               <p class="text-feature">
                 Задача организации, в особенности же рамки и место обучения
@@ -65,6 +81,12 @@
               </p>
             </li>
             <li class="credo-item">
+              <div class="wrap-credo-icon">
+                <svg class="credo-icon">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+
               <h3 class="section-title-feature">Планирование</h3>
               <p class="text-feature">
                 Равным образом консультация с широким активом в значительной
@@ -72,6 +94,12 @@
               </p>
             </li>
             <li class="credo-item">
+              <div class="wrap-credo-icon">
+                <svg class="credo-icon">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+
               <h3 class="section-title-feature">Современные технологии</h3>
               <p class="text-feature">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -207,17 +235,38 @@
         </div>
         <ul class="footer-list">
           <li class="footer-item">
-            <h3 class="footer-title">присоединяйся <svg>
-            <use href="./images/symbol-defs.svg#instagram"></use>
-          </svg></h3>
+            <h3 class="footer-title">присоединяйся</h3>
           </li>
-          <li></li>
-          <li><svg>
-            <use href=""></li>
-          <li><svg>
-            <use href=""></li>
-          <li><svg>
-            <use href=""></li>
+          <div class="footer-flex">
+            <li class="footer-item-social">
+              <a class="link-social"  href="./index.html">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"/></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item-social">
+              <a class="link-social"  href="./index.html">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"/></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item-social">
+              <a class="link-social"  href="./index.html">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"/></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item-social">
+              <a class="link-social"  href="./index.html">
+                <svg class="footer-social" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"/></use>
+                </svg>
+              </a>
+            </li>
+          </div>
         </ul>
       </div>
     </footer>
