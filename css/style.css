@@ -208,6 +208,8 @@ display: flex;
   background-image: url(../images/bgimg.jpg);
   background-position: center;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-studio {
@@ -234,6 +236,7 @@ display: flex;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+  cursor: pointer;
   letter-spacing: 0.06em;
 }
 .button:hover {
@@ -560,8 +563,9 @@ margin-right: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  /* border: 1px solid var(--header-border); */
   background: var(--text-white);
-  border: 1px solid --portfolio-border-color;
+  border: 1px solid var(--portfolio-border-color);
+}
+.works-item:hover {
   box-shadow: var(--portfolio-card-shadow);
 }
